@@ -1,0 +1,6 @@
+[submodule "erc2612-token/lib/forge-std"]
+	path = erc2612-token/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "erc2612-token/lib/openzeppelin-contracts"]
+	path = erc2612-token/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
