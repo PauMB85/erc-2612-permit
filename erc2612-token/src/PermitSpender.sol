@@ -52,7 +52,7 @@ contract PermitSpender {
         require(amount > 0, "Amount must be greater than zero");
 
         // 1 step. call the permit function to authorize the transfer, make an approve
-        token.permit(msg.sender, to, amount, deadline, v, r, s);
+        token.permit(msg.sender, address(this), amount, deadline, v, r, s);
 
         // 2 step. call the token transferFrom function
         bool success = token.transferFrom(msg.sender, to, amount);
